@@ -1,3 +1,7 @@
 module.exports = {
-  lintOnSave: false
+  publicPath: './',
+  lintOnSave: false,
+  chainWebpack: config => {
+    config.optimization.minimize(false)
+  }
 }
